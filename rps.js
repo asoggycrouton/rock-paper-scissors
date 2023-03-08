@@ -22,25 +22,25 @@ function playRound(playerSelection) {
         (playerSelection == 'paper' && computerSelection == 'rock')) {
         
         playerScore += 1
-        result = ('You win! ' + playerSelection + ' beats ' + computerSelection
-            + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
+        result = ('you win! ' + playerSelection + ' beats ' + computerSelection
+            + "<br><br>player score: " + playerScore + "<br>computer score: " + computerScore)
 
         if (playerScore == 5) {
-            result += '<br><br>You won the game! Reload the page to play again'
+            result += '<br><br>you won the game! reload the page to play again'
             disableButtons()
         }
     }
     else if (playerSelection == computerSelection) {
-        result = ('It\'s a tie. You both chose ' + playerSelection
-            + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
+        result = ('it\'s a tie. you both chose ' + playerSelection
+            + "<br><br>player score: " + playerScore + "<br>computer score: " + computerScore)
     }
     else {
         computerScore += 1
-        result = ('You lose! ' + computerSelection + ' beats ' + playerSelection
-            + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
+        result = ('you lose! ' + computerSelection + ' beats ' + playerSelection
+            + "<br><br>player score: " + playerScore + "<br>computer score: " + computerScore)
 
         if (computerScore == 5) {
-            result += '<br><br>I won the game! Reload the page to play again'
+            result += '<br><br>i won the game! reload the page to play again'
             disableButtons()
         }
     }
